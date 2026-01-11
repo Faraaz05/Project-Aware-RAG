@@ -1,0 +1,43 @@
+{
+  "query": "Who Completed the english to german experiments",
+  "timestamp": null,
+  "answer": "Niki completed the English-to-German experiments. [transformer_meeting@00:01:02.500]",
+  "raw_answer": "Niki completed the English-to-German experiments. [CITE:1]",
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "source_type": "meeting_transcript",
+      "content": "Meeting: transformer_meeting\n        Project: attention_transformer_project\n        Date: 2026-01-11\n        Time Range: 00:01:02.500 - 00:02:32.100\n        Speakers: Illia, Ashish, Niki, Noam, Jakob\n\n        Transcript:\n        Illia: Let's discuss the encoder-decoder structure. The encoder maps input $x$ to continuous representations $z$, then the decoder generates output $y$ auto-regressively.\nJakob: I think we should emphasize that each encoder layer has two sub-layers: multi-head self-attention and a position-wise feed-forward network.\nAshish: Plus the residual connections around each sub-layer followed by layer normalization. We need that $LayerNorm(x + Sublayer(x))$ formula in the doc.\nNoam: Don't forget the dimensionality. All sub-layers and embedding layers produce outputs of dimension 512. It keeps the residuals consistent.\nNiki: I've finished the English-to-German experiments. The big model hit 28.4 BLEU. Even the base model at 27.3 BLEU beats the previous SOTA ensembles.\nIllia: That’s incredible. And the English-to-French score? I saw we reached 41.8 BLEU. The training cost was only 3.5 days on 8 P100s.\nJakob: We should also mention the constituency parsing results. It proves the Transformer generalizes well to structural tasks with limited data.\nNoam: Agreed. The 4-layer Transformer we trained on WSJ data got 91.3 F1, which is impressive for a model not specifically tuned for parsing.",
+      "metadata": {
+        "meeting_name": "transformer_meeting",
+        "meeting_date": "2026-01-11",
+        "start_time": "00:01:02.500",
+        "end_time": "00:02:32.100",
+        "speakers": [
+          "Illia",
+          "Ashish",
+          "Niki",
+          "Noam",
+          "Jakob"
+        ]
+      }
+    }
+  ],
+  "citations": [
+    {
+      "chunk_id": "1",
+      "source_type": "transcript",
+      "meeting_name": "transformer_meeting",
+      "meeting_date": "2026-01-11",
+      "start_time": "00:01:02.500",
+      "end_time": "00:02:32.100",
+      "speakers": [
+        "Illia",
+        "Ashish",
+        "Niki",
+        "Noam",
+        "Jakob"
+      ]
+    }
+  ]
+}

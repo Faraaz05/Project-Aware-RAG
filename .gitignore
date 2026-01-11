@@ -3,6 +3,7 @@
 
 # Vector database
 db*/
+unified_chroma_db/
 
 # Python
 __pycache__/
